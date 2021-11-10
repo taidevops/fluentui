@@ -1,0 +1,70 @@
+{
+  "npmScope": "fluentui",
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "package", "prepare"]
+      }
+    }
+  },
+  "workspaceLayout": {
+    "libsDir": "packages",
+    "appsDir": "apps"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "projects": {
+    "@fluentui/eslint-plugin": {
+      "implicitDependencies": []
+    },
+    "@fluentui/keyboard-keys": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
+    "@fluentui/react": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-aria": {
+      "tags": ["vNext"],
+      "implicitDependencies": []
+    },
+    "@fluentui/react-conformance": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-utilities": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
+    "@fluentui/scripts": {
+      "implicitDependencies": []
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ],
+    "package": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "prepare": [
+      {
+        "target": "prepare",
+        "projects": "dependencies"
+      }
+    ]
+  }
+}
