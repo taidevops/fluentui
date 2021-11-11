@@ -3,16 +3,7 @@ pr:
 
 trigger: none
 
-variables:
-  - ${{ if not(startsWith(variables['Build.SourceBranch'], 'refs/heads/')) }}:
-      - name: sinceArg
-        value: --since $(targetBranch)
-
-  - group: fabric-variables
-
-  - template: .devops/templates/variables.yml
-
-pool: 'test'
+pool: '1ES-Host-Ubuntu'
 
 jobs:
   - job: BuildTestLint
@@ -20,3 +11,12 @@ jobs:
       clean: all
     steps:
       - template: .devops/templates/tools.yml
+
+      - task: Bash@3
+        inputs:
+          filePath: yarn-ci.sh
+        displayName: yarn
+
+      - script: |
+          yarn checkchange
+        displayName: verify change files
