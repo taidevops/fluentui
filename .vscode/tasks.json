@@ -5,7 +5,13 @@
       "label": "Typescript (oufr) watch",
       "type": "process",
       "command": "node",
-      "args": ["./node_modules/typescript/bin/tsc", "-p", "packages/react/tsconfig.json", "-w", "--noEmit"],
+      "args": [
+        "./node_modules/typescript/bin/tsc",
+        "-p",
+        "packages/react/tsconfig.json",
+        "-w",
+        "--noEmit"
+      ],
       "problemMatcher": "$tsc",
       "group": {
         "kind": "build",
@@ -16,7 +22,13 @@
       "label": "Typescript (vr-tests) watch",
       "type": "process",
       "command": "node",
-      "args": ["./node_modules/typescript/bin/tsc", "-p", "apps/vr-tests/tsconfig.json", "-w", "--noEmit"],
+      "args": [
+        "./node_modules/typescript/bin/tsc",
+        "-p",
+        "apps/vr-tests/tsconfig.json",
+        "-w",
+        "--noEmit"
+      ],
       "problemMatcher": "$tsc",
       "group": {
         "kind": "build",
@@ -27,7 +39,13 @@
       "label": "Typescript (experiments) watch",
       "type": "process",
       "command": "node",
-      "args": ["./node_modules/typescript/bin/tsc", "-p", "packages/react-experiments/tsconfig.json", "-w", "--noEmit"],
+      "args": [
+        "./node_modules/typescript/bin/tsc",
+        "-p",
+        "packages/react-experiments/tsconfig.json",
+        "-w",
+        "--noEmit"
+      ],
       "problemMatcher": "$tsc",
       "group": {
         "kind": "build",
