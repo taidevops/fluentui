@@ -25,7 +25,11 @@
       "program": "${workspaceRoot}/scripts/debug-test.js",
       "cwd": "${fileDirname}",
       "stopOnEntry": false,
-      "args": ["-i", "--testPathPattern=\\b${fileBasenameNoExtension}", "--watch"],
+      "args": [
+        "-i",
+        "--testPathPattern=\\b${fileBasenameNoExtension}",
+        "--watch"
+      ],
       "runtimeExecutable": null,
       "runtimeArgs": ["--nolazy", "--inspect"],
       "env": {
@@ -42,7 +46,11 @@
       "program": "${workspaceRoot}/scripts/debug-test.js",
       "cwd": "${fileDirname}",
       "stopOnEntry": false,
-      "args": ["-i", "--testPathPattern=\\b${fileBasenameNoExtension}", "--watch"],
+      "args": [
+        "-i",
+        "--testPathPattern=\\b${fileBasenameNoExtension}",
+        "--watch"
+      ],
       "runtimeExecutable": null,
       "runtimeArgs": ["--nolazy", "--inspect"],
       "env": {
@@ -152,7 +160,12 @@
         "--age",
         "10"
       ],
-      "runtimeArgs": ["--nolazy", "--inspect", "-r", "${workspaceRoot}/scripts/ts-node-register"],
+      "runtimeArgs": [
+        "--nolazy",
+        "--inspect",
+        "-r",
+        "${workspaceRoot}/scripts/ts-node-register"
+      ],
       "env": {
         "NODE_ENV": "development"
       },
