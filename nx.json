@@ -1,0 +1,41 @@
+{
+  "npmScope": "tai-ui",
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "package", "prepare"]
+      }
+    }
+  },
+  "workspaceLayout": {
+    "libsDir": "packages",
+    "appsDir": "apps"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "projects": {
+    "@tai-ui/eslint-plugin": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/scripts": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/set-version": {
+      "implicitDependencies": []
+    },
+    "typings": {
+      "tags": ["platform:any"]
+    },
+    "nx-workspace-tools": {
+      "tags": []
+    }
+  }
+}

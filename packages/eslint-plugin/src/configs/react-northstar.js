@@ -6,7 +6,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended', // disable some rules not needed for TS
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'jest', 'import', 'react-hooks', '@fluentui'],
+  plugins: ['@typescript-eslint', 'jest', 'import', 'react-hooks', '@tai-ui'],
   env: {
     browser: true,
     'jest/globals': true,

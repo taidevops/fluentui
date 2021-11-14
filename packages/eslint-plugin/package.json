@@ -1,11 +1,11 @@
 {
-  "name": "@fluentui/eslint-plugin",
+  "name": "@tai-ui/eslint-plugin",
   "version": "1.4.1",
   "description": "ESLint configuration and custom rules for Fluent UI",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/fluentui"
+    "url": "https://github.com/taidevops/taiui"
   },
   "license": "MIT",
   "scripts": {

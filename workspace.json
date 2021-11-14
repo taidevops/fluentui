@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "projects": {
+    "@tai-ui/eslint-plugin": {
+      "root": "packages/eslint-plugin",
+      "projectType": "library"
+    },
+    "@tai-ui/scripts": {
+      "root": "scripts",
+      "projectType": "library"
+    },
+    "@tai-ui/set-version": {
+      "root": "packages/set-version",
+      "projectType": "library"
+    },
+    "typings": {
+      "root": "typings",
+      "projectType": "library",
+      "sourceRoot": "typings"
+    },
+    "nx-workspace-tools": {
+      "root": "tools",
+      "sourceRoot": "tools",
+      "projectType": "library",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/tools"],
+          "options": {
+            "jestConfig": "tools/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "eslint **/*.ts",
+            "cwd": "tools"
+          }
+        },
+        "type-check": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "tsc -b tools/tsconfig.json"
+          }
+        }
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ const config = {
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
-    '@fluentui',
+    '@tai-ui',
     '@typescript-eslint',
     'deprecation',
     'import',
@@ -72,8 +72,8 @@ const config = {
     '**/*.scss.ts',
   ],
   rules: {
-    '@fluentui/no-global-react': 'error',
-    '@fluentui/max-len': [
+    '@tai-ui/no-global-react': 'error',
+    '@tai-ui/max-len': [
       'error',
       {
         ignorePatterns: [
@@ -87,7 +87,7 @@ const config = {
         max: 120,
       },
     ],
-    '@fluentui/no-tslint-comments': 'error',
+    '@tai-ui/no-tslint-comments': 'error',
 
     // tslint: function-name, variable-name
     ...configHelpers.getNamingConventionRule(false /* prefixWithI */),
@@ -119,7 +119,7 @@ const config = {
         message: `"${name}" refers to a DOM global. Did you mean to reference a local value instead?`,
       })),
     ],
-    '@fluentui/ban-imports': [
+    '@tai-ui/ban-imports': [
       'error',
       {
         path: 'react',
@@ -259,7 +259,7 @@ const config = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
 
-    // permanently disable due to performance issues (using custom rule `@fluentui/max-len` instead)
+    // permanently disable due to performance issues (using custom rule `@tai-ui/max-len` instead)
     'max-len': 'off',
 
     // permanently disable due to being unnecessary or having limited benefit for TS

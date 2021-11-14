@@ -1,6 +1,6 @@
 {
   // eslint config for the package itself
-  "extends": ["plugin:@fluentui/eslint-plugin/node"],
+  "extends": ["plugin:@tai-ui/eslint-plugin/node"],
   "root": true,
   "overrides": [
     {
