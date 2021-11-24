@@ -19,9 +19,9 @@ interface TsConfig {
 
 const libPath = path.resolve(process.cwd(), 'lib');
 const srcPath = path.resolve(process.cwd(), 'src');
-// Temporary hack: only use tsbuildinfo file for things under packages/fluentui
+// Temporary hack: only use tsbuildinfo file for things under packages/tai-ui
 const useTsBuildInfo =
-  /[\\/]packages[\\/]fluentui[\\/]/.test(process.cwd()) && path.basename(process.cwd()) !== 'perf-test';
+  /[\\/]packages[\\/]tai-ui[\\/]/.test(process.cwd()) && path.basename(process.cwd()) !== 'perf-test';
 
 /**
  *

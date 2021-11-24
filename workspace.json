@@ -1,9 +1,23 @@
 {
   "version": 2,
   "projects": {
+    "@tai-ui/a11y-testing": {
+      "root": "packages/a11y-testing",
+      "projectType": "library"
+    },
     "@tai-ui/eslint-plugin": {
       "root": "packages/eslint-plugin",
       "projectType": "library"
+    },
+    "@tai-ui/make-styles": {
+      "root": "packages/make-styles",
+      "projectType": "library",
+      "sourceRoot": "packages/make-styles/src"
+    },
+    "@tai-ui/react-aria": {
+      "root": "packages/react-aria",
+      "projectType": "library",
+      "sourceRoot": "packages/react-aria/src"
     },
     "@tai-ui/scripts": {
       "root": "scripts",

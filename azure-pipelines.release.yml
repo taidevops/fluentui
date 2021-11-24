@@ -20,7 +20,9 @@ schedules:
 workspace:
   clean: all
 
-step:
+steps:
+  - template: .devops/templates/tools.yml
+
   - script: |
       git config user.name "UI Build"
       git config user.email "phantantai9800@gmail.com"

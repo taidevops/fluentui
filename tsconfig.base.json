@@ -12,7 +12,8 @@
     "typeRoots": ["node_modules/@types", "./typings"],
     "baseUrl": ".",
     "paths": {
-      "@fluentui/react-aria": ["packages/react-aria/src/index.ts"]
+      "@tai-ui/make-styles": ["packages/make-styles/src/index.ts"],
+      "@tai-ui/react-aria": ["packages/react-aria/src/index.ts"]
     }
   },
   "exclude": ["node_modules"]

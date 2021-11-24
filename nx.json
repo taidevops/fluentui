@@ -22,7 +22,18 @@
     "defaultBase": "master"
   },
   "projects": {
+    "@tai-ui/a11y-testing": {
+      "implicitDependencies": []
+    },
     "@tai-ui/eslint-plugin": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/make-styles": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
+    "@tai-ui/react-aria": {
+      "tags": ["vNext"],
       "implicitDependencies": []
     },
     "@tai-ui/scripts": {

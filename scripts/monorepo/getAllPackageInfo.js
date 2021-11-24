@@ -20,7 +20,7 @@ function getAllPackageInfo() {
   // Get mapping from package name to package path
   // (rollup helper happens to be good for getting basic package name/path pairs)
   const packagePaths = lernaAlias.rollup({ sourceDirectory: false });
-  delete packagePaths['@fluentui/noop']; // not a real package
+  delete packagePaths['@tai-ui/noop']; // not a real package
 
   packageInfo = {};
   cwdForPackageInfo = process.cwd();

@@ -1,0 +1,8 @@
+{
+  "extends": ["plugin:@tai-ui/eslint-plugin/react"],
+  "root": true,
+  "rules": {
+    "deprecation/deprecation": "off",
+    "prefer-const": "off"
+  }
+}
