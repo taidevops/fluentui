@@ -6,4 +6,3 @@ export interface MakeStyles extends Omit<CSSProperties, 'animationName'> {
 
   animationName?: object | string;
 }
-

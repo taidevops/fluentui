@@ -19,6 +19,16 @@
       "projectType": "library",
       "sourceRoot": "packages/react-aria/src"
     },
+    "@tai-ui/react-button": {
+      "root": "packages/react-button",
+      "projectType": "library",
+      "sourceRoot": "packages/react-button/src"
+    },
+    "@tai-ui/react-card": {
+      "root": "packages/react-card",
+      "projectType": "library",
+      "sourceRoot": "packages/react-card/src"
+    },
     "@tai-ui/scripts": {
       "root": "scripts",
       "projectType": "library"

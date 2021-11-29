@@ -36,6 +36,14 @@
       "tags": ["vNext"],
       "implicitDependencies": []
     },
+    "@tai-ui/react-button": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
+    "@tai-ui/react-card": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
     "@tai-ui/scripts": {
       "implicitDependencies": []
     },

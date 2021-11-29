@@ -69,7 +69,7 @@ export function generateVersionFiles() {
     if (
       !fs.existsSync(path.dirname(versionFile)) ||
       packageJsonPath.includes('set-version') ||
-      !dependencies['@fluentui/set-version']
+      !dependencies['@tai-ui/set-version']
     ) {
       return;
     }
@@ -84,7 +84,7 @@ export function generateVersionFiles() {
     if (shouldGenerate) {
       updatedVersionContents[versionFile] = `// Do not modify this file; it is generated as part of publish.
 // The checked in version is a placeholder only and will not be updated.
-import { setVersion } from '@fluentui/set-version';
+import { setVersion } from '@tai-ui/set-version';
 ${setCurrentVersion}`;
     }
   });

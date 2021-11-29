@@ -14,8 +14,8 @@ module.exports = {
   // matched relative to cwd
   ignorePatterns: ['coverage', 'dist', 'etc', 'lib', 'lib-commonjs', 'node_modules', 'temp'],
   rules: {
-    '@fluentui/no-global-react': 'error',
-    '@fluentui/no-tslint-comments': 'error',
+    '@tai-ui/no-global-react': 'error',
+    '@tai-ui/no-tslint-comments': 'error',
 
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
@@ -143,7 +143,7 @@ module.exports = {
     {
       files: '**/*.tsx',
       rules: {
-        '@fluentui/no-visibility-modifiers': 'error',
+        '@tai-ui/no-visibility-modifiers': 'error',
       },
     },
     {

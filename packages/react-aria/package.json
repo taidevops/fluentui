@@ -1,6 +1,6 @@
 {
   "name": "@tai-ui/react-aria",
-  "version": "9.0.0-beta.2",
+  "version": "0.0.1",
   "description": "React helper to ensure ARIA",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
