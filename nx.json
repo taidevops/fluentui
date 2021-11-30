@@ -25,7 +25,16 @@
     "@tai-ui/a11y-testing": {
       "implicitDependencies": []
     },
+    "@tai-ui/dom-utilities": {
+      "implicitDependencies": []
+    },
     "@tai-ui/eslint-plugin": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/jest-serializer-merge-styles": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/merge-styles": {
       "implicitDependencies": []
     },
     "@tai-ui/make-styles": {
@@ -41,6 +50,13 @@
       "implicitDependencies": []
     },
     "@tai-ui/react-card": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
+    "@tai-ui/react-conformance": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/react-theme": {
       "tags": ["vNext", "platform:web"],
       "implicitDependencies": []
     },

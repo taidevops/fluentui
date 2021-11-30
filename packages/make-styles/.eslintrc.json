@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:@tai-ui/eslint-plugin/react"],
+  "root": true,
+  "rules": {
+    "@typescript-eslint/naming-convention": "off"
+  }
+}

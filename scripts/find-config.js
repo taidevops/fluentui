@@ -1,43 +1,59 @@
 // @ts-check
+const path = require('path');
+const child_process = require('child_process');
+const chalk = require('chalk');
+const { logStatus } = require('./logging');
+
+const SEPARATOR = process.platform === 'win32' ? ';' : ':',
+  env = Object.assign({}, process.env);
+
+env.PATH = path.resolve('./node_modules/.bin') + SEPARATOR + env.PATH;
 
 /**
- * Find a config file path, starting in the current directory and looking up to the Git root directory
- * (which contain .git) or the drive root.
- * @param {string} configName - Config file name. If an absolute path, will be returned unmodified.
- * @param {string} [cwd] optional different cwd
- * @returns The config file's path, or undefined if not found
+ * Execute a command.
+ *
+ * @typedef {{
+ *   stdout?: string | Buffer;
+ *   stderr?: string | Buffer;
+ *   err?: import("child_process").ExecException
+ * }} ExecResult
+ *
+ * @param {string} cmd Command to execute
+ * @param {string} [displayName] Display name for the command
+ * @param {string} [cwd] Working directory in which to run the command
+ * @param {{ stdout?: any; stderr?: any; }} [opts] Pipe stdout/stderr somewhere. Can pass `process` global.
+ * @returns {Promise<ExecResult>}
  */
-function findConfig(configName, cwd) {
-  if (!configName) {
-    return undefined;
-  }
+function exec(cmd, displayName, cwd = process.cwd(), opts = {}) {
+  logStatus(chalk.gray('Executing: ') + chalk.cyan(displayName || cmd));
 
-  const fs = require('fs');
-  const path = require('path');
+  const execOptions = {
+    cwd,
+    env: env,
+    encoding: 'utf8',
+  };
 
-  if (path.isAbsolute(configName)) {
-    return configName;
-  }
+  return new Promise((resolve, reject) => {
+    const child = child_process.exec(cmd, execOptions, (error, stdout, stderr) =>
+      error
+        ? reject({
+            error,
+            stdout: stdout,
+            stderr: stderr,
+          })
+        : resolve({
+            stdout: stdout,
+            stderr: stderr,
+          }),
+    );
 
-  const rootPath = path.resolve('/');
-  cwd = cwd || process.cwd();
-  let foundGitRoot = false;
-
-  while (cwd !== rootPath && !foundGitRoot) {
-    const configPath = path.join(cwd, configName);
-
-    if (fs.existsSync(configPath)) {
-      return configPath;
+    if (opts.stdout) {
+      child.stdout.pipe(opts.stdout);
     }
-
-    if (fs.existsSync(path.join(cwd, '.git'))) {
-      foundGitRoot = true;
+    if (opts.stderr) {
+      child.stderr.pipe(opts.stderr);
     }
-
-    cwd = path.dirname(cwd);
-  }
-
-  return undefined;
+  });
 }
 
-module.exports = findConfig;
+module.exports = exec;

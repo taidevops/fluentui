@@ -5,8 +5,20 @@
       "root": "packages/a11y-testing",
       "projectType": "library"
     },
+    "@tai-ui/dom-utilities": {
+      "root": "packages/dom-utilities",
+      "projectType": "library"
+    },
     "@tai-ui/eslint-plugin": {
       "root": "packages/eslint-plugin",
+      "projectType": "library"
+    },
+    "@tai-ui/jest-serializer-merge-styles": {
+      "root": "packages/jest-serializer-merge-styles",
+      "projectType": "library"
+    },
+    "@tai-ui/merge-styles": {
+      "root": "packages/merge-styles",
       "projectType": "library"
     },
     "@tai-ui/make-styles": {
@@ -28,6 +40,15 @@
       "root": "packages/react-card",
       "projectType": "library",
       "sourceRoot": "packages/react-card/src"
+    },
+    "@tai-ui/react-conformance": {
+      "root": "packages/react-conformance",
+      "projectType": "library"
+    },
+    "@tai-ui/react-theme": {
+      "root": "packages/react-theme",
+      "projectType": "library",
+      "sourceRoot": "packages/react-theme/src"
     },
     "@tai-ui/scripts": {
       "root": "scripts",

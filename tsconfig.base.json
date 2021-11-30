@@ -15,7 +15,9 @@
       "@tai-ui/make-styles": ["packages/make-styles/src/index.ts"],
       "@tai-ui/react-aria": ["packages/react-aria/src/index.ts"],
       "@tai-ui/react-button": ["packages/react-button/src/index.ts"],
-      "@tai-ui/react-card": ["packages/react-card/src/index.ts"]
+      "@tai-ui/react-card": ["packages/react-card/src/index.ts"],
+      "@tai-ui/react-conformance": ["packages/react-conformance/src/index.ts"],
+      "@tai-ui/react-theme": ["packages/react-theme/src/index.ts"]
     }
   },
   "exclude": ["node_modules"]

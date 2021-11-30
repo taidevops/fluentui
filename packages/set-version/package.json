@@ -1,6 +1,6 @@
 {
   "name": "@tai-ui/set-version",
-  "version": "8.1.4",
+  "version": "0.0.1",
   "description": "Non-Fabric-specific package version setter",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
