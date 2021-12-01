@@ -56,6 +56,14 @@
     "@tai-ui/react-conformance": {
       "implicitDependencies": []
     },
+    "@tai-ui/react-make-styles": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
+    "@tai-ui/react-text": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
     "@tai-ui/react-theme": {
       "tags": ["vNext", "platform:web"],
       "implicitDependencies": []

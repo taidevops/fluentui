@@ -1,3 +1,5 @@
+export * from './themes/index';
+
 export type {
   BrandVariants,
   FontSizeTokens,

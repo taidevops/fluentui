@@ -45,6 +45,16 @@
       "root": "packages/react-conformance",
       "projectType": "library"
     },
+    "@tai-ui/react-make-styles": {
+      "root": "packages/react-make-styles",
+      "projectType": "library",
+      "sourceRoot": "packages/react-make-styles/src"
+    },
+    "@tai-ui/react-text": {
+      "root": "packages/react-text",
+      "projectType": "library",
+      "sourceRoot": "packages/react-text/src"
+    },
     "@tai-ui/react-theme": {
       "root": "packages/react-theme",
       "projectType": "library",

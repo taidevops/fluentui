@@ -1,6 +1,6 @@
 {
   "name": "@tai-ui/react-card",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": false,
   "description": "Card container components for UI React.",
   "main": "lib-commonjs/index.js",
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@fluentui/react-make-styles": "9.0.0-beta.4",
-    "@tai-ui/react-utilities": "1.0.0",
+    "@tai-ui/react-utilities": "0.0.1",
     "@fluentui/react-tabster": "9.0.0-beta.5",
     "tslib": "^2.1.0"
   },

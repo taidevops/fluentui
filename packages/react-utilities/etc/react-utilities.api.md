@@ -11,6 +11,9 @@ export type AsIntrinsicElement<As extends keyof JSX.IntrinsicElements> = {
     as?: As;
 };
 
+// @public
+export function canUseDOM(): boolean;
+
 // @public (undocumented)
 export type ComponentProps<Shorthands extends ObjectShorthandPropsRecord, Primary extends keyof Shorthands = 'root'> = Omit<{
     [Key in keyof Shorthands]?: ShorthandProps<NonNullable<Shorthands[Key]>>;
@@ -27,6 +30,11 @@ export type ComponentState<Shorthands extends ObjectShorthandPropsRecord> = {
 export type DefaultObjectShorthandProps = ObjectShorthandProps<Pick<React_2.HTMLAttributes<HTMLElement>, 'children' | 'className' | 'style'> & {
     as?: keyof JSX.IntrinsicElements;
 }>;
+
+// Warning: (ae-internal-missing-underscore) The name "defaultSSRContextValue" should be prefixed with an underscore because the declaration is marked as @internal
+//
+// @internal
+export const defaultSSRContextValue: SSRContextValue;
 
 // Warning: (ae-forgotten-export) The symbol "ObscureEventName" needs to be exported by the entry point index.d.ts
 //
@@ -92,8 +100,31 @@ export type Slots<S extends ObjectShorthandPropsRecord> = {
     [K in keyof S]-?: NonNullable<S[K]> extends AsIntrinsicElement<infer As> ? As : S[K] extends ObjectShorthandProps<infer P> ? React_2.ElementType<NonNullable<P>> : React_2.ElementType<NonNullable<S[K]>>;
 };
 
+// Warning: (ae-incompatible-release-tags) The symbol "SSRContext" is marked as @public, but its signature references "SSRContextValue" which is marked as @internal
+//
+// @public (undocumented)
+export const SSRContext: React_2.Context<SSRContextValue>;
+
+// Warning: (ae-internal-missing-underscore) The name "SSRContextValue" should be prefixed with an underscore because the declaration is marked as @internal
+//
+// @internal
+export type SSRContextValue = {
+    current: number;
+};
+
+// @public
+export const SSRProvider: React_2.FC;
+
 // @public
 export type UnionToIntersection<U> = (U extends unknown ? (x: U) => U : never) extends (x: infer I) => U ? I : never;
+
+// @public
+export function useIsSSR(): boolean;
+
+// Warning: (ae-internal-missing-underscore) The name "useSSRContext" should be prefixed with an underscore because the declaration is marked as @internal
+//
+// @internal (undocumented)
+export function useSSRContext(): SSRContextValue;
 
 // Warnings were encountered during analysis:
 //
