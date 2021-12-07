@@ -2567,12 +2567,27 @@
     ajv "^8.4.0"
     tslib "^2.1.0"
 
+"@fluentui/dom-utilities@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@fluentui/dom-utilities/-/dom-utilities-2.1.5.tgz#21ba77c8bfe64d15ffc16a8e055255bbb23600b2"
+  integrity sha512-OLDYV5ZGIiK/JXx/DFFib4vSa7PELvznbdAujDcX2wjt3V3Lt2N5ucv59JsVxk5LlwXjasUHJI2NZadagmnM6A==
+  dependencies:
+    "@fluentui/set-version" "^8.1.5"
+    tslib "^2.1.0"
+
 "@fluentui/jest-serializer-make-styles@9.0.0-beta.4":
   version "9.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/@fluentui/jest-serializer-make-styles/-/jest-serializer-make-styles-9.0.0-beta.4.tgz#18e889eb0246f39bafdd744311b42f2ecb9f02a2"
   integrity sha512-9GjoznKceKvjPrJljHBxRqxuygA+YKJR79CvcyXhudQibHZtwL+f8cCRM+abipoBhB46PJIo87PmSje9ouIAag==
   dependencies:
     "@fluentui/make-styles" "9.0.0-beta.3"
+
+"@fluentui/jest-serializer-merge-styles@^8.0.13":
+  version "8.0.13"
+  resolved "https://registry.yarnpkg.com/@fluentui/jest-serializer-merge-styles/-/jest-serializer-merge-styles-8.0.13.tgz#d9971e6f713928e4eaf5e865b00b907bcbb1ab2b"
+  integrity sha512-T/2ajJyeXmqlJ1GmcUaKBU7FJtrReiTVp0oqISjzr4drLRMKE7pkO4J6k++carA6WxzbFCVotbccZ+ocZfmJWw==
+  dependencies:
+    "@fluentui/merge-styles" "^8.2.2"
 
 "@fluentui/keyboard-keys@9.0.0-beta.1":
   version "9.0.0-beta.1"
@@ -2676,6 +2691,43 @@
   resolved "https://registry.yarnpkg.com/@fluentui/set-version/-/set-version-8.1.5.tgz#68d3d8c7fbefba20b3d1aef71fcc730ca46dd353"
   integrity sha512-AfaycaduWd/aErqEmrAUWpr2gpZrkaSe6D9noXhtVH3JlreRuFM78Ji1oE4f8cpWxSA/K5qb7BT6x4z4I2Bs+A==
   dependencies:
+    tslib "^2.1.0"
+
+"@fluentui/style-utilities@^8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/style-utilities/-/style-utilities-8.5.0.tgz#2a5cd03fc4a8d579516723d5c4f133a09137d337"
+  integrity sha512-44nZISxzfXv+Ujvx2wFiojxhdJLjQ3l4ZIfM08REfz8w5prCx1ts8RkXSp0gkp3P9L1uHMMw2Vg0r9YA3h1EaA==
+  dependencies:
+    "@fluentui/merge-styles" "^8.2.2"
+    "@fluentui/set-version" "^8.1.5"
+    "@fluentui/theme" "^2.4.4"
+    "@fluentui/utilities" "^8.3.7"
+    "@microsoft/load-themed-styles" "^1.10.26"
+    tslib "^2.1.0"
+
+"@fluentui/test-utilities@^8.0.9":
+  version "8.0.9"
+  resolved "https://registry.yarnpkg.com/@fluentui/test-utilities/-/test-utilities-8.0.9.tgz#3824a19fe96035635523731eaf75ca53757a8847"
+  integrity sha512-sg13tux9nHiKHph/s+iq8DMmy64MlUT0PyO59mnvidI+cLqpvzxlKuTG8lHWHAL64pDGP/CnabfzIg5Dw+8a8A==
+
+"@fluentui/theme@^2.4.4":
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/theme/-/theme-2.4.4.tgz#98fc8502f5391b7f3c37f8b8a8c5ec18a9c4d3b8"
+  integrity sha512-H6EcxQiDdKMbbjFheycKhBZQ84rYC/oFQFWpIfMgn7cH20e/2DqN5YddRL+XGvpXVemzLhEutbVMwohFxsYA2g==
+  dependencies:
+    "@fluentui/merge-styles" "^8.2.2"
+    "@fluentui/set-version" "^8.1.5"
+    "@fluentui/utilities" "^8.3.7"
+    tslib "^2.1.0"
+
+"@fluentui/utilities@^8.3.7":
+  version "8.3.7"
+  resolved "https://registry.yarnpkg.com/@fluentui/utilities/-/utilities-8.3.7.tgz#304cb3fe90af290030bf7c7354b42e75f409e171"
+  integrity sha512-v9guLcPmX79SHUzw0wLU5LaLQiRnov1Ais9Dle6c6Mmicu8emtAb2TfCyhHQYx+Bp0TWHqkUnY6Yfp1U3COzqQ==
+  dependencies:
+    "@fluentui/dom-utilities" "^2.1.5"
+    "@fluentui/merge-styles" "^8.2.2"
+    "@fluentui/set-version" "^8.1.5"
     tslib "^2.1.0"
 
 "@gar/promisify@^1.0.1":
@@ -18258,6 +18310,11 @@ octokit-pagination-methods@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/octokit-pagination-methods/-/octokit-pagination-methods-1.1.0.tgz#cf472edc9d551055f9ef73f6e42b4dbb4c80bea4"
   integrity sha512-fZ4qZdQ2nxJvtcasX7Ghl+WlWS/d9IgnBIwFZXVNNZUmzpno91SX5bc5vuxiuKoCtK78XxGGNuSCrDC7xYB3OQ==
+
+office-ui-fabric-core@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/office-ui-fabric-core/-/office-ui-fabric-core-11.0.0.tgz#73f43c8d1bd40e87971c7cda0ff1aa7bfa246410"
+  integrity sha512-K6+KGnBXXjfSxxZpp+4oDXVLgUc//7OnXrn8F08VoJnGhEz27WUf4ZuMa32SjGoqirWlb4JlKkXbOpC9cis6dQ==
 
 on-finished@~2.3.0:
   version "2.3.0"

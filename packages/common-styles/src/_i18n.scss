@@ -1,0 +1,9 @@
+// Some things copied from WinJS with <3
+
+
+// LTR mixin definition
+@mixin LTR {
+    html[dir='ltr'] & {
+        @content
+    }
+}

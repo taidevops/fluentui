@@ -25,6 +25,12 @@
     "@tai-ui/a11y-testing": {
       "implicitDependencies": []
     },
+    "@tai-ui/common-styles": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/date-time-utilities": {
+      "implicitDependencies": []
+    },
     "@tai-ui/dom-utilities": {
       "implicitDependencies": []
     },
@@ -76,6 +82,9 @@
     },
     "typings": {
       "tags": ["platform:any"]
+    },
+    "@tai-ui/utilities": {
+      "implicitDependencies": []
     },
     "nx-workspace-tools": {
       "tags": []

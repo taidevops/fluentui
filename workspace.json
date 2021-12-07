@@ -5,6 +5,14 @@
       "root": "packages/a11y-testing",
       "projectType": "library"
     },
+    "@tai-ui/common-styles": {
+      "root": "packages/common-styles",
+      "projectType": "library"
+    },
+    "@tai-ui/date-time-utilities": {
+      "root": "packages/date-time-utilities",
+      "projectType": "library"
+    },
     "@tai-ui/dom-utilities": {
       "root": "packages/dom-utilities",
       "projectType": "library"
@@ -72,6 +80,10 @@
       "root": "typings",
       "projectType": "library",
       "sourceRoot": "typings"
+    },
+    "@tai-ui/utilities": {
+      "root": "packages/utilities",
+      "projectType": "library"
     },
     "nx-workspace-tools": {
       "root": "tools",
