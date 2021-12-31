@@ -1,7 +1,7 @@
 {
   "name": "@tai-ui/eslint-plugin",
   "version": "1.0.0",
-  "description": "ESLint configuration and custom rules for Fluent UI",
+  "description": "ESLint configuration and custom rules for UI",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
     "lint": "tsc --noEmit && eslint --ext .js --cache ."
   },
   "dependencies": {
+    "@rnx-kit/eslint-plugin": "^0.2.5",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/experimental-utils": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
@@ -29,7 +30,7 @@
   },
   "peerDependencies": {
     "eslint": "^7.0.0",
-    "typescript": "^4.1.0"
+    "typescript": "^4.3.5"
   },
   "files": [
     "src"

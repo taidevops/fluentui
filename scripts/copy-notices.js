@@ -2,6 +2,9 @@ const monorepo = require('./monorepo');
 const path = require('path');
 const fs = require('fs');
 
+/**
+ * Copies NOTICE.txt files from `@tai-ui/react-components` to all of its internal production dependencies
+ */
 async function copyNotices() {
   const noticeFilePath = path.resolve(monorepo.findGitRoot(), 'packages/react-components', 'NOTICE.txt');
 
@@ -10,6 +13,21 @@ async function copyNotices() {
   }
 
   console.log(`NOTICE.txt exists in ${noticeFilePath}`);
+
+  const dependencyNames = await monorepo.getDependencies('@tai-ui/react-components', { production: true });
+  const copyLocations = dependencyNames.map(dependencyName =>
+    path.resolve(monorepo.findGitRoot(), 'packages', dependencyName.replace('@tai-ui/', ''), 'NOTICE.txt'),
+  );
+
+  console.log(`reading ${noticeFilePath}`);
+  const noticeFileContent = fs.readFileSync(noticeFilePath);
+
+  copyLocations.forEach(copyLocation => {
+    // on node < 14 copyFile has an issue with empty files, safer to read contents and write
+    // https://github.com/nodejs/node/issues/34624
+    console.log('writing NOTICE.txt to', copyLocation);
+    fs.writeFileSync(copyLocation, noticeFileContent);
+  });
 }
 
 if (require.main === module) {

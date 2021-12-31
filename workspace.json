@@ -34,6 +34,11 @@
       "projectType": "library",
       "sourceRoot": "packages/make-styles/src"
     },
+    "@tai-ui/react-accordion": {
+      "root": "packages/react-accordion",
+      "projectType": "library",
+      "sourceRoot": "packages/react-accordion/src"
+    },
     "@tai-ui/react-aria": {
       "root": "packages/react-aria",
       "projectType": "library",
@@ -52,6 +57,11 @@
     "@tai-ui/react-conformance": {
       "root": "packages/react-conformance",
       "projectType": "library"
+    },
+    "@tai-ui/react-context-selector": {
+      "root": "packages/react-context-selector",
+      "projectType": "library",
+      "sourceRoot": "packages/react-context-selector/src"
     },
     "@tai-ui/react-make-styles": {
       "root": "packages/react-make-styles",
@@ -83,6 +93,10 @@
     },
     "@tai-ui/utilities": {
       "root": "packages/utilities",
+      "projectType": "library"
+    },
+    "@tai-ui/web-components": {
+      "root": "packages/web-components",
       "projectType": "library"
     },
     "nx-workspace-tools": {

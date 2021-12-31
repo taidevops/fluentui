@@ -1,6 +1,6 @@
 {
   "name": "@tai-ui/react-make-styles",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "React bindings for @tai-ui/make-styles",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -37,7 +37,7 @@
     "@fluentui/react-shared-contexts": "9.0.0-beta.4",
     "@tai-ui/make-styles": "0.0.1",
     "@fluentui/react-theme": "9.0.0-beta.4",
-    "@tai-ui/react-utilities": "0.0.1",
+    "@tai-ui/react-utilities": "1.0.0",
     "tslib": "^2.1.0"
   },
   "peerDependencies": {

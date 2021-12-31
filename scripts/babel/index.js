@@ -43,8 +43,8 @@ module.exports = api => {
       'babel-plugin-annotate-pure-imports',
       {
         imports: {
-          '@fluentui/react-bindings': 'compose',
-          '@fluentui/react-context-selector': 'createContext',
+          '@tai-ui/react-bindings': 'compose',
+          '@tai-ui/react-context-selector': 'createContext',
           '../utils/createSvgIcon': ['createSvgIcon'],
         },
       },

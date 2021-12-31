@@ -1,6 +1,6 @@
 {
   "name": "@tai-ui/react-text",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Text is a typography and styling abstraction component that can be used to ensure the consistency of all text across your application.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@tai-ui/react-make-styles": "0.0.1",
-    "@tai-ui/react-utilities": "0.0.1",
+    "@tai-ui/react-utilities": "1.0.0",
     "tslib": "^2.1.0"
   },
   "peerDependencies": {

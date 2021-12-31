@@ -1,6 +1,6 @@
 {
   "name": "@tai-ui/react-theme",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Fluent UI themes",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

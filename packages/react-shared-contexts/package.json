@@ -35,7 +35,7 @@
     "react-test-renderer": "^16.3.0"
   },
   "dependencies": {
-    "@tai-ui/react-theme": "0.0.1",
+    "@tai-ui/react-theme": "1.0.0",
     "tslib": "^2.1.0"
   },
   "peerDependencies": {

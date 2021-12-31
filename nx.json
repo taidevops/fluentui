@@ -47,6 +47,10 @@
       "tags": ["vNext", "platform:web"],
       "implicitDependencies": []
     },
+    "@tai-ui/react-accordion": {
+      "tags": ["vNext", "platform:web"],
+      "implicitDependencies": []
+    },
     "@tai-ui/react-aria": {
       "tags": ["vNext"],
       "implicitDependencies": []
@@ -60,6 +64,10 @@
       "implicitDependencies": []
     },
     "@tai-ui/react-conformance": {
+      "implicitDependencies": []
+    },
+    "@tai-ui/react-context-selector": {
+      "tags": ["vNext", "platform:web"],
       "implicitDependencies": []
     },
     "@tai-ui/react-make-styles": {
@@ -86,8 +94,31 @@
     "@tai-ui/utilities": {
       "implicitDependencies": []
     },
+    "@tai-ui/web-components": {
+      "implicitDependencies": []
+    },
     "nx-workspace-tools": {
       "tags": []
     }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ],
+    "package": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "prepare": [
+      {
+        "target": "prepare",
+        "projects": "dependencies"
+      }
+    ]
   }
 }
