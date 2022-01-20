@@ -4,10 +4,16 @@
   "description": "Reusable React components",
   "private": true,
   "scripts": {
-
+    "build": "lage build --verbose"
   },
   "devDependencies": {
-
+    "@nrwl/cli": "12.5.9",
+    "@nrwl/devkit": "12.5.9",
+    "@nrwl/jest": "12.5.9",
+    "@nrwl/node": "12.5.9",
+    "@nrwl/tao": "12.5.9",
+    "@nrwl/workspace": "12.5.9",
+    "lage": "1.1.3"
   },
   "workspaces": {
     "packages": [

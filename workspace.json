@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "@tai-ui/scripts": {
+      "root": "scripts",
+      "projectType": "library"
+    }
+  }
+}
